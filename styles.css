@@ -1,0 +1,207 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4B0082;    /* Deep Purple */
+    --secondary: #2F2F2F;  /* Dark Gray */
+    --accent: #9400D3;     /* Violet */
+    --text: #FFFFFF;       /* White */
+    --text-secondary: #CCCCCC;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: linear-gradient(rgba(47, 47, 47, 0.8), rgba(47, 47, 47, 0.8)),
+                url('raven webite images/Raven Image Main content background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+/* Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bento-item {
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.bento-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent);
+}
+
+.bento-item h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.blog-post .date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large, .tall, .wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .bento-item, .blog-post {
+        padding: 1rem;
+    }
+} 

@@ -1,0 +1,250 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Raven Website Create a Bento Grid?
+A bento grid is a modular layout where content is organized into distinct, rectangular blocks (like a Japanese bento box). It’s flexible, visually appealing, and perfect for responsive design because the blocks can resize or stack depending on the screen size. Our site will showcase Raven-inspired content—maybe her powers, quotes, or team highlights—with a dark, moody aesthetic.
+Step 1: Set Up Your Environment
+Before we code, let’s get your tools ready:
+Text Editor: Use Visual Studio Code (free, awesome for beginners).
+
+Browser: Chrome or Firefox for testing (their dev tools are great).
+
+Folder Structure:
+
+raven-bento/
+├── index.html
+├── styles.css
+├── script.js
+└── assets/ (for images, if you add any)
+
+Create this folder 
+Step 2: Build the HTML Structure
+Let’s start with the skeleton of our site. The HTML will define the grid and its content blocks.
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raven Bento Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Raven's Realm</h1>
+  </header>
+  
+  <main class="bento-grid">
+    <section class="bento-item large">
+      <h2>Azarath Metrion Zinthos</h2>
+      <p>Her iconic spell for focus and power.</p>
+    </section>
+    <section class="bento-item">
+      <h2>Telekinesis</h2>
+      <p>Moving objects with her mind.</p>
+    </section>
+    <section class="bento-item">
+      <h2>Dark Energy</h2>
+      <p>Harnessing shadows for strength.</p>
+    </section>
+    <section class="bento-item tall">
+      <h2>Soul-Self</h2>
+      <p>A raven-shaped astral projection.</p>
+    </section>
+    <section class="bento-item">
+      <h2>Empathy</h2>
+      <p>Feeling others’ emotions.</p>
+    </section>
+    <section class="bento-item wide">
+      <h2>Teen Titans</h2>
+      <p>Her family of heroes.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+What’s Happening Here?
+<meta name="viewport"> ensures the site scales on mobile.
+
+The .bento-grid class will hold our grid layout.
+
+.bento-item classes define each block, with modifiers like .large, .tall, or .wide for variety.
+
+Content is Raven-themed—feel free to tweak it!
+
+Save this as index.html.
+Step 3: Style with CSS (Layout and Raven Vibes)
+Now, let’s make it look good and responsive using CSS Grid. We’ll use Raven’s color palette: deep purple (#4B0082), dark gray (#2F2F2F), and accents of violet (#9400D3) or white (#FFFFFF).
+Create styles.css and add this:
+css
+
+/* Reset defaults for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2F2F2F; /* Dark gray, Raven’s vibe */
+  color: #FFFFFF; /* White text for contrast */
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4B0082; /* Deep purple */
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* Bento Grid Layout */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive magic */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bento-item {
+  background-color: #4B0082; /* Purple blocks */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.bento-item:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 0 15px #9400D3; /* Glowing violet shadow */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #9400D3; /* Bright violet accent */
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Size Variations */
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller blocks on tablets */
+  }
+  .large, .tall, .wide {
+    grid-column: span 1; /* Stack on smaller screens */
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .bento-grid {
+    grid-template-columns: 1fr; /* One column on phones */
+  }
+  h1 {
+    font-size: 1.8rem; /* Smaller header */
+  }
+}
+
+What’s Happening Here?
+Grid Magic: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) creates a flexible grid. Blocks shrink or grow but never go below 250px—perfect for responsiveness.
+
+Colors: Raven’s palette—dark gray background, purple blocks, violet accents—gives that mystical, brooding feel.
+
+Hover Effects: A subtle zoom and glow make it interactive.
+
+Media Queries: At 768px (tablets) and 480px (phones), the layout adjusts to stack neatly.
+
+Reset: The * rule ensures no weird spacing messes up our design.
+
+Open index.html in your browser to see it take shape!
+Step 4: Add JavaScript for Interactivity
+Let’s add a simple feature: clicking a bento item will toggle a “highlighted” state with a brighter glow. Create script.js and add:
+javascript
+
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.bento-item');
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('highlighted');
+    });
+  });
+});
+
+Then, update styles.css with this:
+css
+
+.bento-item.highlighted {
+  background-color: #9400D3; /* Brighter violet */
+  box-shadow: 0 0 20px #FFFFFF; /* White glow */
+}
+
+What’s Happening Here?
+DOMContentLoaded ensures the script runs after the HTML loads.
+
+We grab all .bento-item elements and add a click listener.
+
+toggle flips the highlighted class on and off, triggering the CSS.
+
+Refresh your browser and click some blocks—cool, right?
+Step 5: Polish and Test
+You’ve got a solid foundation! Here’s how to refine it:
+Typography: Swap 'Arial' for a Google Font like 'Roboto' or 'Cinzel' (mystical vibe). Add this to your HTML <head>:
+html
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+Then update CSS: font-family: 'Cinzel', serif;.
+
+Images: Add Raven-themed pics in the assets/ folder and include them in HTML like:
+html
+
+<img src="assets/raven.jpg" alt="Raven" style="width: 100%; border-radius: 10px;">
+
+Testing: Resize your browser or use Chrome’s Dev Tools (F12 → Toggle Device Toolbar) to test responsiveness.
+
+Full Stack Recap
+HTML: Structure with semantic tags (<header>, <main>, <section>).
+
+CSS: Grid for layout, media queries for responsiveness, Raven-inspired colors (#2F2F2F, #4B0082, #9400D3).
+
+JavaScript: Basic interactivity with event listeners.
+
+Tips for a New Engineer
+Experiment: Tweak colors, sizes, or effects—make it yours!
+
+Debug: Use browser dev tools to fix issues (e.g., check if CSS isn’t applying).
+
+Learn More: Look up CSS Grid tutorials or JS DOM manipulation next.
+
+You’ve just built a responsive bento grid site! Deploy it on GitHub Pages or Netlify if you want to share it. What do you think—want to add more features like animations or a Twitter feed next? Let me know!
+

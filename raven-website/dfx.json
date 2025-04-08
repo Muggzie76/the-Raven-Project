@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "raven_website": {
+      "frontend": {
+        "entrypoint": "raven-website/public/index.html"
+      },
+      "source": [
+        "raven-website/public",
+        "dist/raven-website/public"
+      ],
+      "type": "assets"
+    },
+    "raven_website_backend": {
+      "main": "raven-website/src/raven_website_backend/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+} 

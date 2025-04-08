@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven's Realm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://identity.ic0.app/js/identity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Raven's Realm</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#powers">Powers</a>
+                <a href="#blog">Blog</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="auth-section">
+                <button id="loginButton">Login</button>
+                <div id="userPrincipal" class="hidden"></div>
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Raven's Realm</h1>
+                <p>Uncover the secrets of the crypto world with Raven</p>
+            </div>
+            <div class="price-chart-container">
+                <h2>Raven Token Price</h2>
+                <canvas id="priceChart"></canvas>
+                <div class="price-info">
+                    <span class="current-price">Loading...</span>
+                    <span class="last-update">Last updated: --</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="powers" class="bento-grid">
+            <div class="bento-item large">
+                <h2>Azarath Metrion Zinthos</h2>
+                <p>Her iconic spell for focus and power in the crypto realm</p>
+            </div>
+            <div class="bento-item">
+                <h2>Telekinesis</h2>
+                <p>Moving through the blockchain with mind power</p>
+            </div>
+            <div class="bento-item">
+                <h2>Dark Energy</h2>
+                <p>Harnessing the power of decentralized networks</p>
+            </div>
+            <div class="bento-item tall">
+                <h2>Soul-Self</h2>
+                <p>Projecting insights across the crypto universe</p>
+            </div>
+            <div class="bento-item">
+                <h2>Empathy</h2>
+                <p>Understanding the crypto community's pulse</p>
+            </div>
+            <div class="bento-item wide">
+                <h2>Teen Titans</h2>
+                <p>Our community of crypto enthusiasts</p>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <h2>Raven's Insights</h2>
+            <div class="blog-grid">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="admin" class="admin-section hidden">
+            <h2>Admin Dashboard</h2>
+            <div class="admin-controls">
+                <button id="createPostButton">Create New Post</button>
+                <div id="postForm" class="hidden">
+                    <input type="text" id="postTitle" placeholder="Post Title">
+                    <textarea id="postContent" placeholder="Post Content"></textarea>
+                    <input type="text" id="postImage" placeholder="Image URL (optional)">
+                    <button id="submitPost">Submit Post</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Raven's Realm. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

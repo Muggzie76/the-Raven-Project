@@ -1,0 +1,1 @@
+Crawl Each of these links and retain the articles in a text form that you can use later to start the blog pages in a website. Store tehm efficiently and retain the images if possible.
