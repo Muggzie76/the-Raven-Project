@@ -38,35 +38,35 @@ const HomePage = () => {
                         <Image src="/Memes and Images/IMG_1271.PNG" alt="Telekinesis" />
                     </div>
                     <h2>Telekinesis</h2>
-                    <p>Moving through the blockchain with the power of mind and will. Like Raven's ability to move objects with thought, we navigate the digital asset space with precision and control.</p>
+                    <p>Raven can telekinetically manipulate objects by putting a little of her soul into whatever she is moving – she becomes a part of it and it becomes a part of her. She can move close to two tons and normally encases objects in the same dark energy that composes her soul-self. Like Raven's ability to move objects with thought, we navigate the digital asset space with precision and control.</p>
                 </div>
                 <div className="bento-item">
                     <div className="bento-image">
                         <Image src="/Memes and Images/IMG_1272.PNG" alt="Dark Energy" />
                     </div>
                     <h2>Dark Energy</h2>
-                    <p>Harnessing the power of decentralized networks through Raven's mystical dark energy manipulation. Converting traditional energy into blockchain power, just as Raven channels her emotions into force.</p>
+                    <p>Raven can mold her soul-self energy into any shape, from giant hands to razor-sharp blades. She can send solid bolts as projectiles and create force-field domes. Her powers are controlled by emotion: the more she feels, the more energy is released. Harnessing this concept of conversion, we transform traditional energy into blockchain power, just as Raven channels her emotions into force.</p>
                 </div>
                 <div className="bento-item tall">
                     <div className="bento-image">
                         <Image src="/Memes and Images/IMG_1265.PNG" alt="Soul-Self Projection" />
                     </div>
                     <h2>Soul-Self Projection</h2>
-                    <p>Just as Raven can project her soul-self across dimensions, we project our vision across the crypto universe. Her ability to traverse realms mirrors our cross-chain capabilities and multiverse exploration.</p>
+                    <p>Raven can project her "soul-self," a powerful bird-shaped astral form composed of dark energy. This soul-self separates from her body and possesses all her powers and more. It allows her to cover great distances, serves as a portal to other dimensions, can be used to enter the minds of others, and pass through solid matter. Just as Raven can project her essence across dimensions, we project our vision across the crypto universe, with cross-chain capabilities and multiverse exploration.</p>
                 </div>
                 <div className="bento-item">
                     <div className="bento-image">
                         <Image src="/Memes and Images/IMG_1253.PNG" alt="Empathy" />
                     </div>
                     <h2>Empathy</h2>
-                    <p>Understanding the crypto community's pulse through Raven's empathic abilities. Sensing market emotions and community sentiment to navigate the future of decentralized finance.</p>
+                    <p>Raven has the empathic ability to read and manipulate the emotions of others. As an empath, she can sense people if they're nearby or have been in a place, and can even sense if someone's mind has been tampered with. She can receive precognitive flashes of the future when exposed to extreme emotion. This sensitivity to emotional currents helps us understand the crypto community's pulse and navigate the future of decentralized finance.</p>
                 </div>
                 <div className="bento-item wide">
                     <div className="bento-image">
                         <Image src="/Memes and Images/IMG_1441.PNG" alt="Mystical Knowledge" />
                     </div>
                     <h2>Mystical Knowledge</h2>
-                    <p>Drawing from Raven's vast mystical knowledge and meditation practices from the monks of Azarath, we bring ancient wisdom to modern blockchain technology. Combining spiritual insight with technical innovation.</p>
+                    <p>Raven has been shown using spells and incantations for various magical effects. The dark magic she learned allows her to perform powerful feats, break binding spells, and create protective curses. She often chants the incantation "Azarath Metrion Zinthos" to focus her abilities further, allowing her to perform greater feats; she also uses this phrase as a mantra while meditating. Drawing from this vast mystical knowledge, we bring ancient wisdom to modern blockchain technology, combining spiritual insight with technical innovation.</p>
                 </div>
             </section>
 
