@@ -85,7 +85,7 @@
     - [x] Implement WebP conversion
     - [x] Add responsive image components
     - [x] Update components to use optimized Image component
-  - [ ] Minify CSS/JS
+  - [x] Minify CSS/JS
   - [ ] Add caching system
   - [ ] Implement CDN
 
@@ -96,7 +96,11 @@
     - [ ] Set up asset optimization
   - [x] Add required dependencies:
     - [x] sharp: ^0.32.6
+    - [x] clean-css: ^5.3.2
+    - [x] terser: ^5.28.1
     - [ ] webpack-image-loader: ^1.0.0
+  - [x] Add build scripts:
+    - [x] Create minify.js script for CSS/JS minification
 
 - [x] React Components
   - [x] Create src/components/Image/Image.js

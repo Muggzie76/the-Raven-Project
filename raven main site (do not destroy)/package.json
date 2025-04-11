@@ -1,0 +1,53 @@
+{
+  "name": "raven-website",
+  "version": "1.0.0",
+  "description": "The Raven Project - Investigative Journalism in the Crypto World",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "set PORT=3000 && set BROWSER=none && react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "convert-images": "node public/convert-to-webp.js",
+    "minify": "node minify.js"
+  },
+  "dependencies": {
+    "@dfinity/agent": "0.15.1",
+    "@dfinity/auth-client": "0.15.1",
+    "@dfinity/identity": "0.15.1",
+    "@dfinity/principal": "0.15.1",
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0",
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "browserify-fs": "^1.0.0",
+    "buffer": "^6.0.3",
+    "clean-css-cli": "^5.6.3",
+    "crypto-browserify": "^3.12.1",
+    "cssnano": "^7.0.6",
+    "path-browserify": "^1.0.1",
+    "sharp": "^0.32.6",
+    "stream-browserify": "^3.0.0",
+    "terser": "^5.39.0",
+    "typescript": "^4.9.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
