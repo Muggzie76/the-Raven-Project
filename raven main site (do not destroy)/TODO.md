@@ -47,7 +47,7 @@
   - [x] Create RSS feed
 
 - [ ] Content Management
-  - [ ] Set up automated article import from Nuance
+  - [x] Set up automated article import from Nuance
   - [ ] Create admin dashboard
   - [x] Implement article scheduling
   - [x] Add image optimization system
