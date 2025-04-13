@@ -22,6 +22,13 @@
   - [x] Add social sharing buttons
   - [x] Implement related articles feature
   - [x] Create article templates
+    - [x] Implement NewsTemplate for breaking news content
+    - [x] Implement AnalysisTemplate for in-depth analytical content
+    - [x] Implement FeatureTemplate for long-form storytelling content
+    - [x] Create ArticleFormatter utility for content processing
+    - [x] Connect article templates to real content files
+    - [x] Add article template selection system
+    - [x] Create toggle between classic and template views
 
 ## Development Environment
 - [x] Port Configuration
@@ -45,6 +52,7 @@
   - [x] Implement categories and tags
   - [x] Add social sharing buttons
   - [x] Create RSS feed
+  - [x] Create article formats and templates
 
 - [ ] Content Management
   - [x] Set up automated article import from Nuance
@@ -72,10 +80,10 @@
     - [ ] Add accessibility checker
 
 ## User Experience
-- [ ] Navigation
+- [x] Navigation
   - [x] Create sticky header
   - [x] Implement smooth scrolling
-  - [ ] Add breadcrumb navigation
+  - [x] Add breadcrumb navigation
   - [x] Create mobile menu
 
 - [x] Search Functionality
@@ -175,13 +183,13 @@
   - [ ] Create newsletter archive
 
 ## Security
-- [ ] Protection
-  - [ ] Implement HTTPS
-  - [ ] Add security headers
-  - [ ] Set up rate limiting
+- [x] Protection
+  - [x] Implement HTTPS
+  - [x] Add security headers
+  - [x] Set up rate limiting
   - [x] Create backup system
 
-- [ ] Internet Identity Integration
+- [x] Internet Identity Integration
   - [x] Set up Internet Identity canister
   - [x] Configure admin-only authentication
   - [x] Implement II frontend integration
@@ -191,7 +199,7 @@
   - [x] Add II error handling
   - [x] Create admin dashboard access control
 
-- [ ] Authentication
+- [x] Authentication
   - [x] Implement user registration (Replaced by II)
   - [x] Add login system (Replaced by II)
   - [x] Create password recovery (Replaced by II)
@@ -199,9 +207,9 @@
 
 ## Content
 - [ ] Articles
-  - [ ] Import existing articles
-  - [ ] Create article templates
-  - [ ] Add related articles
+  - [x] Import existing articles
+  - [x] Create article templates
+  - [x] Add related articles
   - [ ] Implement article series
 
 - [ ] Media
@@ -276,10 +284,10 @@
   - [ ] Create feedback system
 
 ## Deployment
-- [ ] Infrastructure
-  - [ ] Set up hosting
-  - [ ] Configure domain
-  - [ ] Implement SSL
+- [x] Infrastructure
+  - [x] Set up hosting
+  - [x] Configure domain
+  - [x] Implement SSL
   - [x] Create deployment pipeline
 
 - [ ] Launch
